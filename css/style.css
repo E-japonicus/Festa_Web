@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 /* --------------------------------
+ * reset CSS設定を初期化
+ * -------------------------------- */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,hr,menu,nav,section{display:block}a,hr{padding:0}abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}ins,mark{background-color:#ff9;color:#000}body{line-height:1}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;font-size:100%;vertical-align:baseline;background:0 0}ins{text-decoration:none}mark{font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;margin:1em 0}input,select{vertical-align:middle}
+
+/* --------------------------------
  * base
  * -------------------------------- */
 html {
@@ -306,6 +312,7 @@ a:link, a:visited, a:hover, a:active {
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
     transition: opacity 0.15s;
 }
+
 /*
 .hot-topic:hover {
     opacity: 0.85;
@@ -331,21 +338,16 @@ hot-topicのマウスがhoverした時のレイアウト
 }
 
 .hot-topic .desc {
-    color: #ddc;
+    color: #f6f6dc;
     font-size: 1.35rem;
 }
 
-.hot-topic a:link {
-  color: rgb(255, 185, 0);
-}
+.hot-topic a:link { color: rgb(255, 185, 0); }
 
-.hot-topic a:visited {
-  color: rgb(255, 185, 0);
-}
+.hot-topic a:visited { color: rgb(255, 185, 0);}
 
-.hot-topic a:hover {
-  color: rgb(105, 255, 0);
-}
+.hot-topic a:hover { color: rgb(105, 255, 0); }
+
 
 .hot-topic hr {
   border-top: none;
@@ -896,16 +898,16 @@ hot-topicのマウスがhoverした時のレイアウト
      display: block;
  }
 
- /*eventのboxの余白の調整*/
-  .ligthbox .coordinate{
-    display: inline-block;
-    overflow: hidden;
-    width: 65%;
-    height: 380px;
-    margin: 1% 0.5%;
-    background: url('../images/newevent/new_event-min.png');
-    background-size:cover;
-  }
+/*eventのboxの余白の調整*/
+ .ligthbox .coordinate{
+   display: inline-block;
+   overflow: hidden;
+   width: 65%;
+   height: 380px;
+   margin: 1% 0.5%;
+   background: url('../images/newevent/new_event.png');
+   background-size:cover;
+ }
 
  .ligthbox .timetable {
      display: inline-block;
@@ -999,17 +1001,6 @@ hot-topicのマウスがhoverした時のレイアウト
        display: block;
    }
 
-   /*eventのboxの余白の調整*/
-    .ligthbox .coordinate{
-      display: inline-block;
-      width: 63%;
-      margin: 1% 0.5%;
-      height: 300px;
-      overflow: hidden;
-      background: url('../images/newevent/new_event-min.png');
-      background-size:cover;
-    }
-
    .ligthbox .newevent {
        display: inline-block;
        width: 31.5%;
@@ -1032,6 +1023,17 @@ hot-topicのマウスがhoverした時のレイアウト
        padding: 2%;
        display: block;
    }
+
+   /*eventのboxの余白の調整*/
+    .ligthbox .coordinate{
+      display: inline-block;
+      width: 63%;
+      margin: 1% 0.5%;
+      height: 300px;
+      overflow: hidden;
+      background: url('../images/newevent/new_event.png');
+      background-size:cover;
+    }
 
    .ligthbox .timetable {
        display: inline-block;
