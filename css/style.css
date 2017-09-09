@@ -892,17 +892,6 @@ hot-topicのマウスがhoverした時のレイアウト
      display: block;
  }
 
-/*eventのboxの余白の調整*/
- .ligthbox .coordinate{
-   display: inline-block;
-   overflow: hidden;
-   width: 65%;
-   height: 380px;
-   margin: 1% 0.5%;
-   background: url('../images/newevent/new_event.png');
-   background-size:cover;
- }
-
  .ligthbox .timetable {
      display: inline-block;
      width: 48.5%;
@@ -1018,17 +1007,6 @@ hot-topicのマウスがhoverした時のレイアウト
        display: block;
    }
 
-   /*eventのboxの余白の調整*/
-    .ligthbox .coordinate{
-      display: inline-block;
-      width: 63%;
-      margin: 1% 0.5%;
-      height: 300px;
-      overflow: hidden;
-      background: url('../images/newevent/new_event.png');
-      background-size:cover;
-    }
-
    .ligthbox .timetable {
        display: inline-block;
        width: 47%;
@@ -1135,11 +1113,6 @@ hot-topicのマウスがhoverした時のレイアウト
      padding: 2%;
       display: block;
   }
-
-  /*eventのboxの余白の調整*/
-   .ligthbox .coordinate{
-     display: none;
-   }
 
   .ligthbox .timetable {
       display: inline-block;
