@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* タブレット用CSS about 600 lines~ */
+/* スマホ用CSS　about 980 limes~ */
+
 /* --------------------------------
  * reset CSS設定を初期化
  * -------------------------------- */
@@ -44,7 +47,6 @@ a:link, a:visited, a:hover, a:active {
     background: url('../images/bg-header.gif');
     letter-spacing: 1px;
     font-size: 2.3rem;
-    padding-top:
 }
 
 .crosshead {
@@ -64,61 +66,6 @@ a:link, a:visited, a:hover, a:active {
 .hidden {
     display: none;
 }
-
-/*----------　タブレット用始まり　------------------------------------------------------------*/
-@media (min-width:651px) and (max-width:960px){
-  .heading {
-      height: auto;
-      width: auto;
-      padding: 12px;
-      background: url('../images/bg-header.gif');
-      letter-spacing: 1px;
-      font-size: 1.7rem;
-      padding-top:
-  }
-
-  .crosshead {
-      height: auto;
-      width: auto;
-      padding: 1%;
-      font-size: 1.5rem;
-      background: #6dd7ff;
-      /*背景色（古いブラウザだとここの色のみが出ます）*/
-      background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e5e5e5));
-      /*グラデーション*/
-      background: -webkit-linear-gradient(#FFF, #e5e5e5);
-      background: linear-gradient(#FFF, #e5e5e5);
-      /*グラデーション終わり*/
-  }
-}
-
-/*----------　タブレット用終わり--スマホ用始まり　----------------------------------------------*/
-@media (max-width: 650px) {
-    .heading {
-        height: auto;
-        width: auto;
-        padding: 12px;
-        background: url('../images/bg-header.gif');
-        letter-spacing: 1px;
-        font-size: 1.7rem;
-        padding-top:
-    }
-
-    .crosshead {
-        height: auto;
-        width: auto;
-        padding: 2.5%;
-        font-size: 1.5rem;
-        background: #6dd7ff;
-        /*背景色（古いブラウザだとここの色のみが出ます）*/
-        background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e5e5e5));
-        /*グラデーション*/
-        background: -webkit-linear-gradient(#FFF, #e5e5e5);
-        background: linear-gradient(#FFF, #e5e5e5);
-        /*グラデーション終わり*/
-    }
-}
-/*----------　スマホ用終わり　------------------------------------------------------------*/
 
 /* --------------------------------
  * header
@@ -181,70 +128,6 @@ a:link, a:visited, a:hover, a:active {
     color: #fff;
 }
 
-/*----------　タブレット用始まり　------------------------------------------------------------*/
-@media (min-width:601px) and (max-width:1070px){
-  /* logo */
-  .logo {
-      width: 85%;
-      height: 65%;
-      margin: 0 auto;
-      background: url('../images/logo.jpg') no-repeat;
-      background-position: center;
-      background-size: contain;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-  }
-
-  /* メニュー */
-  .global-nav {
-      margin-top: 15px;
-      text-align: center;
-  }
-
-  .global-nav .nav-item {
-      display: inline-block;
-      margin: 0 1.5%;
-  }
-
-  .global-nav .nav-item a {
-      display: inline-block;
-      width: auto;
-      height: 30px;
-      line-height: 30px;
-      text-align: center;
-      border-radius: 8px;
-      color: #666;
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      transition: 0.15s;
-  }
-
-  .global-nav .nav-item.active a, .global-nav .nav-item a:hover {
-      background-color: #d03c56;
-      color: #fff;
-  }
-
-}
-
-/*----------　タブレット用終わり--スマホ用始まり　----------------------------------------------*/
-@media (max-width: 600px) {
-  /* logo */
-  .logo {
-      width: 90%;
-      height: 80%;
-      margin: 0 auto;
-      background: url('../images/logo-mini.jpg') no-repeat;
-      background-position: center;
-      background-size: contain;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-  }
-
-}
-/*----------　スマホ用終わり　------------------------------------------------------------*/
-
 /* --------------------------------
  * wrapper
  * -------------------------------- */
@@ -253,23 +136,6 @@ a:link, a:visited, a:hover, a:active {
     width: 970px;
     margin: 30px auto 40px;
 }
-
-/*----------　タブレット用始まり　------------------------------------------------------------*/
-@media (min-width:601px) and (max-width:960px){
-  .wrapper {
-      width: 100%;
-      margin: 14px auto 20px;
-  }
-}
-
-/*----------　タブレット用終わり--スマホ用始まり　----------------------------------------------*/
-@media (max-width: 600px) {
-    .wrapper {
-        width: 100%;
-        margin: 14px auto 20px;
-    }
-}
-/*----------　スマホ用終わり　------------------------------------------------------------*/
 
 /* --------------------------------
  * index-main index.html
@@ -426,215 +292,6 @@ hot-topicのマウスがhoverした時のレイアウト
     line-height: 1;
 }
 
-/*----------　タブレット用始まり　------------------------------------------------------------*/
-@media (min-width:601px) and (max-width:960px){
-  .index-main {
-      display: block;
-      /*float: left;*/
-      width: 65%;
-      margin: 1%;
-  }
-  /* スライドショー index.html */
-  .slideshow {
-      display: block;
-      height: 250px;
-      width: 100%;
-      margin-bottom: 10px;
-      box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
-      transition: opacity 0.15s;
-      position: relative;
-  }
-  .slideshow .image {
-      ｓ position: absolute;
-      top: 0;
-      left: 0;
-  }
-  /* お知らせ index.html */
-  .hot-topic {
-      display: block;
-      height: auto;
-      margin-bottom: 10px;
-      box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
-      transition: opacity 0.15s;
-  }
-  .hot-topic:hover {
-      opacity: 0.85;
-  }
-  .hot-topic .content {
-      position: relative;
-      float: left;
-      width: 100%;
-      height: auto;
-      padding: 2% 3% 2%;
-      background-color: #2d3d54;
-      line-height: 1.7;
-  }
-  .hot-topic .title {
-      margin-bottom: 5px;
-      color: #fff;
-      font-weight: normal;
-      font-size: 1.7rem;
-  }
-  .hot-topic .desc {
-      color: #ddc;
-      font-size: 1.1rem;
-  }
-
-  /* お知らせスクロールリスト index.html */
-  .scroll-list {
-      max-height: 130px;
-      overflow-y: scroll;
-      margin-bottom: 10px;
-      list-style-type: none;
-  }
-  .scroll-list .scroll-item a {
-      display: block;
-      padding: 5px 7px;
-      color: #333;
-      font-size: 0;
-      transition: background-color 0.1s;
-  }
-  .scroll-list .scroll-item a:hover {
-      background-color: #fafaf8;
-  }
-  .scroll-list .date {
-      display: inline-block;
-      width: 25%;
-      letter-spacing: 1px;
-      font-weight: bold;
-      font-size: 1.2rem;
-  }
-
-  .scroll-list .title {
-      display: inline-block;
-      width: 65%;
-      padding-top: 2%;
-      padding-left: 10px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      font-size: 1.2rem;
-  }
-  .scroll-list .new {
-  	background: #F00;
-  	color: #FFF;
-  	font-size: 1.2rem;
-  	padding: 0px 5px;
-  	margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .sidemenu {
-      display: block;
-      width: 31%;
-      margin: 0 1%;
-  }
-
-}
-
-/*----------　タブレット用終わり--スマホ用始まり　----------------------------------------------*/
-@media (max-width: 600px) {
-    .index-main {
-        display: block;
-        /*float: left;*/
-        width: 90%;
-        margin: 5%;
-    }
-    /* スライドショー index.html */
-    .slideshow {
-        display: block;
-        height: 150px;
-        width: 100%;
-        margin-bottom: 10px;
-        box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
-        transition: opacity 0.15s;
-        position: relative;
-    }
-    .slideshow .image {
-        ｓ position: absolute;
-        top: 0;
-        left: 0;
-    }
-    /* お知らせ index.html */
-    .hot-topic {
-        display: block;
-        height: auto;
-        margin-bottom: 10px;
-        box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
-        transition: opacity 0.15s;
-    }
-    .hot-topic:hover {
-        opacity: 0.85;
-    }
-    .hot-topic .content {
-        position: relative;
-        float: left;
-        width: 100%;
-        height: auto;
-        padding: 2% 3% 2%;
-        background-color: #2d3d54;
-        line-height: 1.7;
-    }
-    .hot-topic .title {
-        margin-bottom: 5px;
-        color: #fff;
-        font-weight: normal;
-        font-size: 1.7rem;
-    }
-    .hot-topic .desc {
-        color: #ddc;
-        font-size: 1.1rem;
-    }
-    /* お知らせスクロールリスト index.html */
-    .scroll-list {
-        max-height: 130px;
-        overflow-y: scroll;
-        margin-bottom: 10px;
-        list-style-type: none;
-    }
-    .scroll-list .scroll-item a {
-        display: block;
-        padding: 5px 7px;
-        color: #333;
-        font-size: 0;
-        transition: background-color 0.1s;
-    }
-    .scroll-list .scroll-item a:hover {
-        background-color: #fafaf8;
-    }
-    .scroll-list .date {
-        display: inline-block;
-        width: 30%;
-        letter-spacing: 1px;
-        font-weight: bold;
-        font-size: 1.05rem;
-    }
-    .scroll-list .title {
-        display: inline-block;
-        width: 70%;
-        padding-top: 1%;
-        padding-left: 2%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        font-size: 1.1rem;
-    }
-    .scroll-list .new {
-    	background: #F00;
-    	color: #FFF;
-    	font-size: 1.0rem;
-    	padding: 0px 5px;
-    	margin-left: 5px;
-      margin-right: 5px;
-    }
-    .sidemenu {
-        display: block;
-        width: 92%;
-        margin: 0 4%;
-    }
-}
-/*----------　スマホ用終わり　------------------------------------------------------------*/
-
 /* --------------------------------
  * main
  * -------------------------------- */
@@ -717,115 +374,6 @@ hot-topicのマウスがhoverした時のレイアウト
 .main .content ul {
     padding: 5px 15px;
 }
-
-/*----------　タブレット用始まり　------------------------------------------------------------*/
-@media (min-width:601px) and (max-width:960px){
-  .main {
-      display: block;
-      float: left;
-      width: 96%;
-      margin: 2%;
-  }
-
-  .main .content {
-      width: 100%;
-      height: auto;
-      /*グラデーション*/
-      background: linear-gradient(#FFF, #eaeaea);
-      overflow: hidden;
-      margin-bottom: 17px;
-      font-size: 1rem;
-      line-height: 230%;
-      padding: 0;
-  }
-
-  .main .content p {
-      padding: 0.5rem 2% 0.7rem 2%;
-      font-size: 1.35em;
-  }
-
-  .main .content ul {
-      padding: 5px 5%;
-      font-size: 1.3rem;
-  }
-
-  /* google map access.html */
-  .map {
-      width: 100%;
-      height: 500px;
-  }
-
-  /* 協賛 link.html */
-  .cosponsor {
-      float: left;
-      width: 33%;
-      font-size: 1.2rem;
-  }
-
-  /* google form contact.html */
-
-  .form {
-      width: 100%;
-      height: 1050px;
-  }
-
-}
-
-/*----------　タブレット用終わり--スマホ用始まり　----------------------------------------------*/
-@media (max-width: 600px) {
-  .main {
-      display: block;
-      float: left;
-      width: 94%;
-      margin: 3%;
-  }
-
-  .main .content {
-      width: 100%;
-      height: auto;
-      /*グラデーション*/
-      background: linear-gradient(#FFF, #eaeaea);
-      overflow: hidden;
-      margin-bottom: 17px;
-      font-size: 1rem;
-      line-height: 230%;
-      padding: 0;
-  }
-
-  .main .content p {
-      padding: 0.5rem 2% 0.7rem 2%;
-      font-size: 1.35em;
-  }
-
-  .main .content ul {
-      padding: 5px 5%;
-      font-size: 1.3rem;
-  }
-
-  /* google map access.html */
-  .map {
-      width: 100%;
-      height: 300px;
-  }
-
-  /* 協賛 link.html */
-  .cosponsor {
-      float: left;
-      width: 100%;
-      font-size: 1.2rem;
-  }
-
-  /* google form contact.html */
-
-  .form {
-      width: 100%;
-      height: 1050px;
-  }
-
-
-}
-/*----------　スマホ用終わり　------------------------------------------------------------*/
-
 
 /* --------------------------------
  * lightbox
@@ -966,10 +514,318 @@ hot-topicのマウスがhoverした時のレイアウト
      display: block;
  }
 
+/* --------------------------------
+ * table
+ * -------------------------------- */
 
- /*----------　タブレット用始まり　------------------------------------------------------------*/
- @media (min-width:601px) and (max-width:960px){
-   .main .ligthbox p {
+table.box {
+    margin: 15px 0;
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    width: 100%;
+}
+
+table.box thead th {
+    width: auto;
+    font-size: 1.7rem;
+    padding: 10px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 2px solid #00d2d9;
+    background: #dcdcd1;
+}
+
+table.box tbody th {
+    width: 20%;
+    font-size: 1.6rem;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    background: #ececec;
+    text-align: center;
+}
+
+table.box tbody td {
+    font-size: 1.6rem;
+    width: auto;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+
+.footer {
+    width: 100%;
+    padding: 20px 0 30px;
+    background: #2d3d54 url('../images/bg-footer.gif');
+    color: #fff;
+}
+
+.horizontal-list {
+    width: 970px;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 0;
+}
+
+.horizontal-list .horizontal-item {
+    display: inline-block;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+
+.horizontal-list .horizontal-item+.horizontal-item {
+    border-left: 1px solid #bbb;
+}
+
+.horizontal-list .horizontal-item a {
+    border-bottom: 1px dashed #777;
+    color: #bbb;
+    font-size: 1.1rem;
+    transition: color 0.15s;
+}
+
+.horizontal-list .horizontal-item a:hover {
+    color: #ddd;
+}
+
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/*----------　タブレットCSS　------------------------------------------------------------------------------------------------------------------*/
+@media (min-width:651px) and (max-width:960px){
+  .heading {
+      height: auto;
+      width: auto;
+      padding: 12px;
+      background: url('../images/bg-header.gif');
+      letter-spacing: 1px;
+      font-size: 1.7rem;
+  }
+
+  .crosshead {
+      height: auto;
+      width: auto;
+      padding: 1%;
+      font-size: 1.5rem;
+      background: #6dd7ff;
+      /*背景色（古いブラウザだとここの色のみが出ます）*/
+      background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e5e5e5));
+      /*グラデーション*/
+      background: -webkit-linear-gradient(#FFF, #e5e5e5);
+      background: linear-gradient(#FFF, #e5e5e5);
+      /*グラデーション終わり*/
+  }
+
+  /* logo */
+  .logo {
+      width: 85%;
+      height: 65%;
+      margin: 0 auto;
+      background: url('../images/logo.jpg') no-repeat;
+      background-position: center;
+      background-size: contain;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+  }
+
+  /* メニュー */
+  .global-nav {
+      margin-top: 15px;
+      text-align: center;
+  }
+
+  .global-nav .nav-item {
+      display: inline-block;
+      margin: 0 1.5%;
+  }
+
+  .global-nav .nav-item a {
+      display: inline-block;
+      width: auto;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 8px;
+      color: #666;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      transition: 0.15s;
+  }
+
+  .global-nav .nav-item.active a, .global-nav .nav-item a:hover {
+      background-color: #d03c56;
+      color: #fff;
+  }
+
+  .wrapper {
+      width: 100%;
+      margin: 14px auto 20px;
+  }
+
+  .index-main {
+      display: block;
+      /*float: left;*/
+      width: 65%;
+      margin: 1%;
+  }
+  /* スライドショー index.html */
+  .slideshow {
+      display: block;
+      height: 250px;
+      width: 100%;
+      margin-bottom: 10px;
+      box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+      transition: opacity 0.15s;
+      position: relative;
+  }
+  .slideshow .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  /* お知らせ index.html */
+  .hot-topic {
+      display: block;
+      height: auto;
+      margin-bottom: 10px;
+      box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+      transition: opacity 0.15s;
+  }
+  .hot-topic:hover {
+      opacity: 0.85;
+  }
+  .hot-topic .content {
+      position: relative;
+      float: left;
+      width: 100%;
+      height: auto;
+      padding: 2% 3% 2%;
+      background-color: #2d3d54;
+      line-height: 1.7;
+  }
+  .hot-topic .title {
+      margin-bottom: 5px;
+      color: #fff;
+      font-weight: normal;
+      font-size: 1.7rem;
+  }
+  .hot-topic .desc {
+      color: #ddc;
+      font-size: 1.1rem;
+  }
+
+  /* お知らせスクロールリスト index.html */
+  .scroll-list {
+      max-height: 130px;
+      overflow-y: scroll;
+      margin-bottom: 10px;
+      list-style-type: none;
+  }
+  .scroll-list .scroll-item a {
+      display: block;
+      padding: 5px 7px;
+      color: #333;
+      font-size: 0;
+      transition: background-color 0.1s;
+  }
+  .scroll-list .scroll-item a:hover {
+      background-color: #fafaf8;
+  }
+  .scroll-list .date {
+      display: inline-block;
+      width: 25%;
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 1.2rem;
+  }
+
+  .scroll-list .title {
+      display: inline-block;
+      width: 65%;
+      padding-top: 2%;
+      padding-left: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 1.2rem;
+  }
+  .scroll-list .new {
+    background: #F00;
+    color: #FFF;
+    font-size: 1.2rem;
+    padding: 0px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .sidemenu {
+      display: block;
+      width: 31%;
+      margin: 0 1%;
+  }
+
+  .main {
+      display: block;
+      float: left;
+      width: 96%;
+      margin: 2%;
+  }
+
+  .main .content {
+      width: 100%;
+      height: auto;
+      /*グラデーション*/
+      background: linear-gradient(#FFF, #eaeaea);
+      overflow: hidden;
+      margin-bottom: 17px;
+      font-size: 1rem;
+      line-height: 230%;
+      padding: 0;
+  }
+
+  .main .content p {
+      padding: 0.5rem 2% 0.7rem 2%;
+      font-size: 1.35em;
+  }
+
+  .main .content ul {
+      padding: 5px 5%;
+      font-size: 1.3rem;
+  }
+
+  /* google map access.html */
+  .map {
+      width: 100%;
+      height: 500px;
+  }
+
+  /* 協賛 link.html */
+  .cosponsor {
+      float: left;
+      width: 33%;
+      font-size: 1.2rem;
+  }
+
+  /* google form contact.html */
+
+  .form {
+      width: 100%;
+      height: 1050px;
+  }
+
+  .main .ligthbox p {
      font-size: 1.2rem;
    }
 
@@ -1083,10 +939,238 @@ hot-topicのマウスがhoverした時のレイアウト
        padding: 2%;
        display: block;
    }
- }
 
- /*----------　タブレット用終わり--スマホ用始まり　----------------------------------------------*/
+   table.box thead th {
+      width: auto;
+      font-size: 1.5rem;
+      padding: 10px;
+      font-weight: bold;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-bottom: 2px solid #00d2d9;
+      background: #dcdcd1;
+  }
+
+  table.box tbody th {
+      width: 20%;
+      font-size: 1.3rem;
+      padding: 10px;
+      font-weight: bold;
+      vertical-align: top;
+      border: 1px solid #ccc;
+      background: #ececec;
+      text-align: center;
+  }
+
+  table.box tbody td {
+      font-size: 1.2rem;
+      width: auto;
+      padding: 10px;
+      vertical-align: top;
+      border: 1px solid #ccc;
+  }
+
+  .horizontal-list {
+      width: 100%;
+      margin: 0 auto;
+      text-align: right;
+      font-size: 0;
+  }  
+}
+
+/*----------　スマホCSS　------------------------------------------------------------------------------------------------------------------------------------*/
+
 @media (max-width: 600px) {
+    .heading {
+        height: auto;
+        width: auto;
+        padding: 12px;
+        background: url('../images/bg-header.gif');
+        letter-spacing: 1px;
+        font-size: 1.7rem;
+    }
+
+    .crosshead {
+        height: auto;
+        width: auto;
+        padding: 2.5%;
+        font-size: 1.5rem;
+        background: #6dd7ff;
+        /*背景色（古いブラウザだとここの色のみが出ます）*/
+        background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e5e5e5));
+        /*グラデーション*/
+        background: -webkit-linear-gradient(#FFF, #e5e5e5);
+        background: linear-gradient(#FFF, #e5e5e5);
+        /*グラデーション終わり*/
+    }
+
+   /* logo */
+  .logo {
+      width: 90%;
+      height: 80%;
+      margin: 0 auto;
+      background: url('../images/logo-mini.jpg') no-repeat;
+      background-position: center;
+      background-size: contain;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+  }
+
+  .wrapper {
+        width: 100%;
+        margin: 14px auto 20px;
+    }
+
+    .index-main {
+        display: block;
+        /*float: left;*/
+        width: 90%;
+        margin: 5%;
+    }
+    /* スライドショー index.html */
+    .slideshow {
+        display: block;
+        height: 150px;
+        width: 100%;
+        margin-bottom: 10px;
+        box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+        transition: opacity 0.15s;
+        position: relative;
+    }
+    .slideshow .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /* お知らせ index.html */
+    .hot-topic {
+        display: block;
+        height: auto;
+        margin-bottom: 10px;
+        box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+        transition: opacity 0.15s;
+    }
+    .hot-topic:hover {
+        opacity: 0.85;
+    }
+    .hot-topic .content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: auto;
+        padding: 2% 3% 2%;
+        background-color: #2d3d54;
+        line-height: 1.7;
+    }
+    .hot-topic .title {
+        margin-bottom: 5px;
+        color: #fff;
+        font-weight: normal;
+        font-size: 1.7rem;
+    }
+    .hot-topic .desc {
+        color: #ddc;
+        font-size: 1.1rem;
+    }
+    /* お知らせスクロールリスト index.html */
+    .scroll-list {
+        max-height: 130px;
+        overflow-y: scroll;
+        margin-bottom: 10px;
+        list-style-type: none;
+    }
+    .scroll-list .scroll-item a {
+        display: block;
+        padding: 5px 7px;
+        color: #333;
+        font-size: 0;
+        transition: background-color 0.1s;
+    }
+    .scroll-list .scroll-item a:hover {
+        background-color: #fafaf8;
+    }
+    .scroll-list .date {
+        display: inline-block;
+        width: 30%;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 1.05rem;
+    }
+    .scroll-list .title {
+        display: inline-block;
+        width: 70%;
+        padding-top: 1%;
+        padding-left: 2%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 1.1rem;
+    }
+    .scroll-list .new {
+      background: #F00;
+      color: #FFF;
+      font-size: 1.0rem;
+      padding: 0px 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .sidemenu {
+        display: block;
+        width: 92%;
+        margin: 0 4%;
+    }
+
+    .main {
+      display: block;
+      float: left;
+      width: 94%;
+      margin: 3%;
+  }
+
+  .main .content {
+      width: 100%;
+      height: auto;
+      /*グラデーション*/
+      background: linear-gradient(#FFF, #eaeaea);
+      overflow: hidden;
+      margin-bottom: 17px;
+      font-size: 1rem;
+      line-height: 230%;
+      padding: 0;
+  }
+
+  .main .content p {
+      padding: 0.5rem 2% 0.7rem 2%;
+      font-size: 1.35em;
+  }
+
+  .main .content ul {
+      padding: 5px 5%;
+      font-size: 1.3rem;
+  }
+
+  /* google map access.html */
+  .map {
+      width: 100%;
+      height: 300px;
+  }
+
+  /* 協賛 link.html */
+  .cosponsor {
+      float: left;
+      width: 100%;
+      font-size: 1.2rem;
+  }
+
+  /* google form contact.html */
+
+  .form {
+      width: 100%;
+      height: 1050px;
+  }
+
   .main .ligthbox p {
     font-size: 1.2rem;
   }
@@ -1195,91 +1279,7 @@ hot-topicのマウスがhoverした時のレイアウト
       padding: 2%;
       display: block;
   }
-}
-/*----------　スマホ用終わり　------------------------------------------------------------*/
 
-
-
-/* --------------------------------
- * table
- * -------------------------------- */
-
-table.box {
-    margin: 15px 0;
-    border-collapse: collapse;
-    text-align: left;
-    line-height: 1.5;
-    width: 100%;
-}
-
-table.box thead th {
-    width: auto;
-    font-size: 1.7rem;
-    padding: 10px;
-    font-weight: bold;
-    border-top: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-bottom: 2px solid #00d2d9;
-    background: #dcdcd1;
-}
-
-table.box tbody th {
-    width: 20%;
-    font-size: 1.6rem;
-    padding: 10px;
-    font-weight: bold;
-    vertical-align: top;
-    border: 1px solid #ccc;
-    background: #ececec;
-    text-align: center;
-}
-
-table.box tbody td {
-    font-size: 1.6rem;
-    width: auto;
-    padding: 10px;
-    vertical-align: top;
-    border: 1px solid #ccc;
-}
-
-/*----------　タブレット用始まり　------------------------------------------------------------*/
-@media (min-width:601px) and (max-width:960px){
-  table.box thead th {
-      width: auto;
-      font-size: 1.5rem;
-      padding: 10px;
-      font-weight: bold;
-      border-top: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-      border-left: 1px solid #ccc;
-      border-bottom: 2px solid #00d2d9;
-      background: #dcdcd1;
-  }
-
-  table.box tbody th {
-      width: 20%;
-      font-size: 1.3rem;
-      padding: 10px;
-      font-weight: bold;
-      vertical-align: top;
-      border: 1px solid #ccc;
-      background: #ececec;
-      text-align: center;
-  }
-
-  table.box tbody td {
-      font-size: 1.2rem;
-      width: auto;
-      padding: 10px;
-      vertical-align: top;
-      border: 1px solid #ccc;
-  }
-
-}
-
-/*----------　タブレット用終わり--スマホ用始まり　----------------------------------------------*/
-@media (max-width: 600px) {
   table.box thead th {
       width: auto;
       font-size: 1.5rem;
@@ -1311,72 +1311,10 @@ table.box tbody td {
       border: 1px solid #ccc;
   }
 
-}
-/*----------　スマホ用終わり　------------------------------------------------------------*/
-
-
-/* --------------------------------
- * footer
- * -------------------------------- */
-
-.footer {
-    width: 100%;
-    padding: 20px 0 30px;
-    background: #2d3d54 url('../images/bg-footer.gif');
-    color: #fff;
-}
-
-.horizontal-list {
-    width: 970px;
-    margin: 0 auto;
-    text-align: right;
-    font-size: 0;
-}
-
-.horizontal-list .horizontal-item {
-    display: inline-block;
-    padding: 0 15px;
-    letter-spacing: 1px;
-}
-
-.horizontal-list .horizontal-item+.horizontal-item {
-    border-left: 1px solid #bbb;
-}
-
-.horizontal-list .horizontal-item a {
-    border-bottom: 1px dashed #777;
-    color: #bbb;
-    font-size: 1.1rem;
-    transition: color 0.15s;
-}
-
-.horizontal-list .horizontal-item a:hover {
-    color: #ddd;
-}
-
-.copyright {
-    margin-top: 30px;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-/*----------　タブレット用始まり　------------------------------------------------------------*/
-@media (min-width:601px) and (max-width:960px){
   .horizontal-list {
-      width: 100%;
-      margin: 0 auto;
-      text-align: right;
-      font-size: 0;
-  }
-}
-
-/*----------　タブレット用終わり--スマホ用始まり　----------------------------------------------*/
-@media (max-width: 600px) {
-    .horizontal-list {
         width: 100%;
         margin: 0 auto;
         text-align: right;
         font-size: 0;
     }
 }
-/*----------　スマホ用終わり　------------------------------------------------------------*/
