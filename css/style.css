@@ -83,7 +83,7 @@ a:link, a:visited, a:hover, a:active {
     width: 90%;
     height: 70%;
     margin: 0 auto;
-    background: url('../images/logo.jpg') no-repeat;
+    background: url('../images/logo.png') no-repeat;
     background-position: center;
     background-size: contain;
     text-indent: 100%;
@@ -632,7 +632,7 @@ table.box tbody td {
       width: 85%;
       height: 65%;
       margin: 0 auto;
-      background: url('../images/logo.jpg') no-repeat;
+      background: url('../images/logo.png') no-repeat;
       background-position: center;
       background-size: contain;
       text-indent: 100%;
@@ -1010,7 +1010,7 @@ table.box tbody td {
       width: 90%;
       height: 80%;
       margin: 0 auto;
-      background: url('../images/logo-mini.jpg') no-repeat;
+      background: url('../images/logo-mini.png') no-repeat;
       background-position: center;
       background-size: contain;
       text-indent: 100%;
